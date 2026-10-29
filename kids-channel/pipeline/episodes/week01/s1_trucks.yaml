@@ -1,0 +1,77 @@
+id: s1_colorful_trucks
+type: song
+hook: >-
+  Araçlar + renkler: Miuki "Ayo Bekerja Naik Truk" (bu ay 11M), RoboSquad "Construction Vehicles Song"
+  (22 dk derleme), Cocomelofy "Learning Colors". Her kıtada yeni renkli kamyon girer, nakarat kornayla açılır.
+bpm: 100
+style: "children's song, bouncy acoustic guitar, toy horns, claps, cheerful female vocal, 100 bpm, catchy, major key"
+structure: [intro, verse1, chorus, verse2, chorus, verse3, chorus, outro]
+title:
+  en: "Colorful Trucks Song 🚚🌈 Learn Colors with Trucks | Lulu & Bobo Kids Songs"
+  es: "Canción de los Camiones de Colores 🚚🌈 Aprende los Colores | Lulu y Bobo"
+  pt: "Música dos Caminhões Coloridos 🚚🌈 Aprenda as Cores | Lulu e Bobo"
+description:
+  en: "Beep beep! Red, blue, yellow and green trucks are coming to Lulu's farm. Learn colors and sing along!"
+  es: "¡Bip bip! Camiones rojos, azules, amarillos y verdes llegan a la granja de Lulu. ¡Aprende los colores cantando!"
+  pt: "Bi bi! Caminhões vermelhos, azuis, amarelos e verdes chegam à fazenda da Lulu. Aprenda as cores cantando!"
+tags:
+  en: [trucks song, learn colors, vehicles for kids, nursery rhymes, toddler songs, lulu and bobo]
+  es: [canción de camiones, aprender colores, vehículos para niños, canciones infantiles, lulu y bobo]
+  pt: [música de caminhão, aprender cores, veículos para crianças, música infantil, lulu e bobo]
+thumbnail: "four shiny toy trucks in red, blue, yellow and green in a row, lulu_hedgehog waving from the red one, plain sunny sky background"
+scenes:
+  intro:
+    - {chars: [lulu], beats: 12, image: "standing by a sunny country road with a farm behind, holding a toy horn", motion: "lulu blows the toy horn, distant trucks appear on the road, camera slowly pushes in"}
+  verse1:
+    - {chars: [lulu], image: "a cute round red truck driving on the country road toward camera", motion: "red truck rolls forward bouncing gently, lulu points at it"}
+    - {chars: [lulu], image: "red truck full of shiny red apples parked next to lulu", motion: "an apple bounces off the pile, lulu catches it and smiles", sing: true}
+    - {chars: [lulu], image: "a cute round blue truck driving on a bumpy road", motion: "blue truck bumps up and down over little hills"}
+    - {chars: [lulu], image: "blue truck full of blue balls next to lulu", motion: "blue balls bounce out, lulu jumps with them", sing: true}
+  chorus:
+    - {chars: [lulu, bobo], image: "lulu and bobo at the farm gate waving at a line of colorful trucks", motion: "trucks honk, lulu and bobo cheer and wave", sing: true}
+    - {chars: [lulu], image: "red, blue, yellow and green trucks driving in a line one by one", motion: "trucks drive past one by one, each one gives a little hop"}
+    - {chars: [lulu, zipzip], image: "lulu and zipzip pointing at the colorful trucks from a fence", motion: "they point at each truck in turn and bounce to the beat", sing: true}
+    - {chars: [lulu, bobo], image: "all trucks parked in a rainbow row, lulu hugging bobo", motion: "trucks flash their headlights like smiles, lulu and bobo hug", sing: true}
+  verse2:
+    - {chars: [lulu], image: "a cute round yellow truck shining in the sun", motion: "yellow truck drives forward with a sparkling shine"}
+    - {chars: [lulu], image: "yellow truck full of bananas next to lulu", motion: "lulu peels a banana and takes a happy bite", sing: true}
+    - {chars: [lulu], image: "a cute round green truck driving very slowly", motion: "green truck drives slowly like a turtle, lulu walks beside it"}
+    - {chars: [lulu], image: "green truck full of green leaves", motion: "leaves blow up in a swirl around lulu", sing: true}
+  verse3:
+    - {chars: [lulu], image: "all four colorful trucks driving into a cozy farm yard", motion: "trucks drive in one after another and park"}
+    - {chars: [bobo], image: "bobo standing in the farm yard waving his big arm", motion: "bobo waves warmly with a big smile", sing: true}
+    - {chars: [lulu], image: "lulu counting the trucks with her fingers, one two three four", motion: "lulu raises fingers one by one as each truck honks", sing: true}
+    - {chars: [lulu, zipzip, mimi], image: "friends climbing playfully on the parked trucks", motion: "friends wave from the truck windows and laugh"}
+  outro:
+    - {chars: [lulu, bobo, zipzip, mimi], beats: 12, image: "all friends waving at camera in front of the rainbow truck row", motion: "everyone waves bye-bye, trucks honk together"}
+lyrics:
+  en:
+    verse1: ["Here comes the red truck, rolling down the road,", "Carrying red apples, a big red load!", "Here comes the blue truck, bumpy bump bump,", "Carrying blue balls, jump jump jump!"]
+    chorus: ["Beep beep! Here they come!", "Colorful trucks, one by one!", "Red and blue and yellow too,", "Colorful trucks, I love you!"]
+    verse2: ["Here comes the yellow truck, shining like the sun,", "Carrying yellow bananas, yummy, one by one!", "Here comes the green truck, slow and steady,", "Carrying green leaves, ready, ready!"]
+    verse3: ["Now all the trucks go to the farm,", "Daddy Bobo waves his big brown arm!", "Lulu counts them: one, two, three, four,", "Colorful trucks, let's play some more!"]
+  es:
+    verse1: ["Ahí viene el camión rojo por el camino,", "Lleva manzanas rojas, ¡qué divino!", "Ahí viene el camión azul, bum bum bum,", "Lleva pelotas azules, ¡pum pum pum!"]
+    chorus: ["¡Bip bip! ¡Ya vienen ya!", "Camiones de colores, ¡uno, dos y más!", "Rojo, azul y amarillo,", "¡Camiones de colores, qué sencillo!"]
+    verse2: ["Ahí viene el camión amarillo como el sol,", "Lleva plátanos amarillos, ¡qué sabor!", "Ahí viene el camión verde, despacito,", "Lleva hojas verdes, poquito a poquito."]
+    verse3: ["Todos los camiones van a la granja,", "Papá Bobo los saluda con su mano grandota,", "Lulu los cuenta: uno, dos, tres, cuatro,", "¡Camiones de colores, juguemos otro rato!"]
+  pt:
+    verse1: ["Lá vem o caminhão vermelho na estrada,", "Levando maçãs vermelhas, que carregada!", "Lá vem o caminhão azul, bum bum bum,", "Levando bolas azuis, pum pum pum!"]
+    chorus: ["Bi bi! Lá vem eles!", "Caminhões coloridos, um por um!", "Vermelho, azul e amarelo,", "Caminhões coloridos, que belo!"]
+    verse2: ["Lá vem o caminhão amarelo brilhando,", "Levando bananas amarelas, vai chegando!", "Lá vem o caminhão verde, devagarinho,", "Levando folhas verdes, bem certinho!"]
+    verse3: ["Todos os caminhões vão pra fazenda,", "Papai Bobo acena lá da varanda,", "Lulu conta: um, dois, três, quatro,", "Caminhões coloridos, vamos brincar mais um pouco!"]
+shorts:
+  - id: trucks_chorus
+    sections: [chorus]
+    title:
+      en: "Beep beep! Colorful trucks 🚚🌈 #shorts #kidssongs"
+      es: "¡Bip bip! Camiones de colores 🚚🌈 #shorts #cancionesinfantiles"
+      pt: "Bi bi! Caminhões coloridos 🚚🌈 #shorts #musicainfantil"
+    description:
+      en: "Red, blue, yellow... which truck is your favorite? Full song on the Lulu & Bobo channel!"
+      es: "Rojo, azul, amarillo... ¿cuál es tu camión favorito? ¡Canción completa en el canal Lulu y Bobo!"
+      pt: "Vermelho, azul, amarelo... qual é o seu caminhão favorito? Música completa no canal Lulu e Bobo!"
+    tags:
+      en: [trucks, colors, kids songs, shorts]
+      es: [camiones, colores, canciones infantiles, shorts]
+      pt: [caminhões, cores, música infantil, shorts]

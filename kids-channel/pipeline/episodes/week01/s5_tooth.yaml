@@ -1,0 +1,77 @@
+id: s5_wiggly_tooth
+type: song
+hook: >-
+  Diş düştü anı: KingFoo Kids "¡Se le cayó un diente a KingFoo! 🦷😱" (ES, 98 günde 21K abone).
+  Kanca "Pop!" ile dişin düşmesi; ardından yeni dişi fırçalama mesajı (diş hijyeni, ebeveyn dostu).
+bpm: 100
+style: "funny kids song, bouncy ukulele, boing sound effects, glockenspiel sparkle, cheerful female vocal, 100 bpm"
+structure: [intro, verse1, chorus, verse2, chorus, verse3, chorus, outro]
+title:
+  en: "My Wiggly Tooth Song 🦷 Zippy Lost a Tooth! | Lulu & Bobo Kids Songs"
+  es: "Canción del Dientito Flojo 🦷 ¡Zipi Perdió un Diente! | Lulu y Bobo"
+  pt: "Música do Dentinho Mole 🦷 O Zipi Perdeu um Dente! | Lulu e Bobo"
+description:
+  en: "Zippy's tooth goes wiggle, wiggle... pop! A brand new tooth will grow. Remember to brush every day!"
+  es: "El diente de Zipi se mueve, se mueve... ¡pop! Un diente nuevo va a crecer. ¡Cepíllate cada día!"
+  pt: "O dente do Zipi balança, balança... pop! Um dente novo vai nascer. Escove todo dia!"
+tags:
+  en: [loose tooth song, lost tooth, brush your teeth, kids songs, nursery rhymes, lulu and bobo]
+  es: [diente flojo, se me cayó un diente, cepillarse los dientes, canciones infantiles, lulu y bobo]
+  pt: [dente mole, caiu o dente, escovar os dentes, música infantil, lulu e bobo]
+thumbnail: "zipzip_frog with a huge surprised smile showing a tooth gap, holding a tiny shiny tooth, plain light blue background, close up"
+scenes:
+  intro:
+    - {chars: [zipzip, lulu], beats: 12, image: "cozy kitchen table with a basket of red apples, zipzip and lulu sitting", motion: "zipzip touches his mouth with a puzzled face, lulu leans closer"}
+  verse1:
+    - {chars: [zipzip], image: "close up of zipzip pointing at a slightly wobbly front tooth", motion: "the tooth wiggles back and forth with a cartoon boing", sing: true}
+    - {chars: [zipzip], image: "zipzip eating soft bread, tooth wiggling", motion: "he chews and the tooth jiggles, he giggles"}
+    - {chars: [lulu, zipzip], image: "lulu looking closely into zipzip's open mouth like a little dentist", motion: "lulu nods yes, it is loose", sing: true}
+    - {chars: [zipzip], image: "zipzip with a question mark above his head", motion: "zipzip shrugs and tilts his head"}
+  chorus:
+    - {chars: [zipzip], image: "zipzip wiggling his tooth with his tongue, funny face", motion: "he wiggles the tooth left and right to the beat", sing: true}
+    - {chars: [zipzip, lulu], image: "a tiny tooth popping out with sparkles, both friends amazed", motion: "pop! a tiny tooth jumps out and sparkles in the air"}
+    - {chars: [zipzip], image: "a tiny new tooth sprouting like a seedling in a dreamy bubble", motion: "dream bubble shows a new tooth growing like a little plant", sing: true}
+    - {chars: [zipzip, lulu], image: "zipzip smiling big showing his gap, lulu laughing", motion: "zipzip grins wide, lulu claps"}
+  verse2:
+    - {chars: [zipzip], image: "zipzip holding a big crunchy red apple", motion: "zipzip opens wide and takes a big crunchy bite", sing: true}
+    - {chars: [zipzip], image: "the tooth popping out of the apple with a sparkle", motion: "pop! the tooth jumps out of the apple and lands on the table"}
+    - {chars: [zipzip, lulu], image: "zipzip and lulu staring at the tooth with big eyes", motion: "both gasp in surprise then laugh", sing: true}
+    - {chars: [zipzip], image: "tiny shiny tooth on a little plate like a prize", motion: "the tooth shines like a tiny gem"}
+  verse3:
+    - {chars: [zipzip], image: "zipzip in pajamas putting the tooth under his pillow", motion: "he lifts the pillow and carefully places the tooth", sing: true}
+    - {chars: [lulu, zipzip], image: "lulu whispering into zipzip's ear, night room with moonlight", motion: "lulu whispers, zipzip nods sleepily"}
+    - {chars: [zipzip, lulu], image: "zipzip and lulu brushing teeth at the bathroom sink in the morning", motion: "they brush up and down, foam bubbles", sing: true}
+    - {chars: [zipzip, lulu, bobo], image: "everyone showing shiny smiles, bobo with a thumbs up", motion: "big shiny smiles sparkle, bobo gives thumbs up"}
+  outro:
+    - {chars: [zipzip, lulu], beats: 12, image: "zipzip and lulu waving with toothbrushes", motion: "they wave toothbrushes bye-bye and grin"}
+lyrics:
+  en:
+    verse1: ["Zippy's tooth goes wiggle, wiggle,", "When he eats, it starts to jiggle!", "Is it loose? Oh yes, it is!", "Wiggly tooth, what is this?"]
+    chorus: ["Wiggle, wiggle, wiggly tooth,", "Out it comes, that's the truth!", "A brand new tooth will grow for you,", "Smile big with a gap or two!"]
+    verse2: ["Crunchy apple, one big bite,", "Pop! The tooth comes out just right!", "Look at Zippy's big surprise,", "Tiny tooth, a tiny prize!"]
+    verse3: ["Under the pillow, the tooth goes in,", "Lulu whispers with a grin:", "“Brush your new tooth every day,", "Keep it shiny, hip hooray!”"]
+  es:
+    verse1: ["El diente de Zipi se mueve, se mueve,", "Cuando come, ¡cómo se mueve!", "¿Está flojito? ¡Sí, lo está!", "Dientito, ¿qué pasará?"]
+    chorus: ["Se mueve, se mueve, el dientito,", "¡Ya se cayó, qué chiquito!", "Un diente nuevo va a crecer,", "¡Sonríe grande, ya lo vas a ver!"]
+    verse2: ["Una manzana crujiente, ¡ñam!", "¡Pop! El diente salió, ¡ta-chán!", "Mira a Zipi, ¡qué sorpresa!", "Un dientito sobre la mesa."]
+    verse3: ["Bajo la almohada va el dientito,", "Lulu le dice muy bajito:", "“Cepilla el nuevo cada día,", "¡Brillará con alegría!”"]
+  pt:
+    verse1: ["O dente do Zipi está balançando,", "Quando ele come, fica mexendo!", "Está molinho? Está sim!", "Dentinho, vai cair assim?"]
+    chorus: ["Balança, balança, dentinho,", "Caiu! Que pequeninho!", "Um dente novo vai nascer,", "Sorria grande, você vai ver!"]
+    verse2: ["Uma maçã crocante, nhac!", "Pop! O dente saiu, tchan!", "Olha o Zipi, que surpresa!", "Um dentinho sobre a mesa!"]
+    verse3: ["Embaixo do travesseiro vai o dentinho,", "Lulu fala bem baixinho:", "“Escove o novo todo dia,", "Vai brilhar com alegria!”"]
+shorts:
+  - id: tooth_pop
+    sections: [verse2, chorus]
+    title:
+      en: "One big bite... POP! 🍎🦷 #shorts #kidssongs"
+      es: "Un mordisco... ¡POP! 🍎🦷 #shorts #cancionesinfantiles"
+      pt: "Uma mordida... POP! 🍎🦷 #shorts #musicainfantil"
+    description:
+      en: "Zippy lost his tooth! Full song on Lulu & Bobo."
+      es: "¡Zipi perdió su diente! Canción completa en Lulu y Bobo."
+      pt: "O Zipi perdeu o dente! Música completa em Lulu e Bobo."
+    tags:
+      en: [loose tooth, tooth, kids, shorts]
+      es: [diente flojo, diente, niños, shorts]
+      pt: [dente mole, dente, crianças, shorts]

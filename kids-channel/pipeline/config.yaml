@@ -1,0 +1,44 @@
+# Araç komut şablonları. {placeholder}'lar orkestratör tarafından doldurulur.
+# Bir şablon boşsa ya da --dry-run verilirse komut çalıştırılmaz, out/<bölüm>/jobs.sh'a yazılır.
+# Kendi kurulumuna göre yolları düzenle (Wan2GP, ACE-Step, ComfyUI vb.).
+
+paths:
+  out: out
+  assets: assets            # jingle.wav, logo.png, font.ttf buraya
+  jingle: assets/jingle.wav # yoksa atlanır
+
+style: >-
+  cute soft 3D cartoon for toddlers, rounded shapes, saturated pastel colors,
+  big shiny eyes, simple clean background, soft studio lighting, high detail, no text,
+  16:9 wide shot with main characters centered (safe for 9:16 center crop)
+
+negative: >-
+  scary, creepy, horror, extra fingers, deformed hands, distorted face, text,
+  watermark, logo, realistic human, violence, blood, dark lighting
+
+video:
+  fps: 24
+  long: {w: 1920, h: 1080}   # ana format; her şey 16:9 üretilir
+  short: {w: 1080, h: 1920}  # Shorts uzun videodan merkez kırpılır
+  clip_seconds: 5           # Wan 2.2 tek klip süresi
+
+tools:
+  # Şarkı: ACE-Step 1.5 (MIT). Kendi CLI/API çağrına göre düzenle.
+  music: >-
+    python -m acestep.cli --prompt "{style}" --lyrics_file "{lyrics_file}"
+    --bpm {bpm} --duration {duration} --output "{out}"
+  # Vokal ayrımı (S2V'ye yalnız vokal verilir)
+  stems: >-
+    python -m demucs --two-stems=vocals -o "{out_dir}" "{song}"
+  # Sahne görseli: Flux/SDXL + karakter LoRA (ComfyUI API, diffusers scripti vb.)
+  image: >-
+    python tools/gen_image.py --prompt "{prompt}" --negative "{negative}"
+    --loras "{loras}" --w {w} --h {h} --out "{out}"
+  # Wan2GP image-to-video (Wan 2.2 I2V). Wan2GP sürümüne göre CLI/kuyruk dosyası kullan.
+  i2v: >-
+    python wgp.py --i2v --image "{image}" --prompt "{prompt}"
+    --seconds {seconds} --out "{out}"
+  # Şarkı söyleyen sahne: Wan2.2-S2V / InfiniteTalk (Wan2GP içinde)
+  s2v: >-
+    python wgp.py --s2v --image "{image}" --audio "{audio}" --prompt "{prompt}"
+    --out "{out}"

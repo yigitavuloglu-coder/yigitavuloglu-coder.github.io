@@ -1,0 +1,38 @@
+# Karakter kitabı — her prompt bu tanımlardan kurulur, tutarlılık buradan gelir.
+# lora: karakter LoRA dosyası (referans setle eğitilir); trigger: LoRA tetik kelimesi.
+
+lulu:
+  name: {tr: Lulu, en: Lulu, es: Lulu, pt: Lulu, ar: لولو}
+  lora: loras/lulu_v1.safetensors
+  trigger: lulu_hedgehog
+  look: >-
+    lulu_hedgehog, a tiny 3 year old hedgehog girl, soft coral pink spikes,
+    round cream face, big brown eyes, small pink nose, yellow overalls with a heart pocket
+  voice: cheerful toddler girl
+
+bobo:
+  name: {tr: Bobo Baba, en: Daddy Bobo, es: Papá Bobo, pt: Papai Bobo, ar: بابا بوبو}
+  lora: loras/bobo_v1.safetensors
+  trigger: bobo_bear
+  look: >-
+    bobo_bear, a big gentle brown bear dad, round belly, warm smile,
+    green knitted sweater, tiny round glasses
+  voice: warm calm male
+
+zipzip:
+  name: {tr: Zıpzıp, en: Zippy, es: Zipi, pt: Zipi, ar: زيبي}
+  lora: loras/zipzip_v1.safetensors
+  trigger: zipzip_frog
+  look: >-
+    zipzip_frog, a small sky blue frog boy, huge round eyes, orange sneakers,
+    red cap worn backwards
+  voice: funny squeaky boy
+
+mimi:
+  name: {tr: Mimi, en: Mimi, es: Mimi, pt: Mimi, ar: ميمي}
+  lora: loras/mimi_v1.safetensors
+  trigger: mimi_ant
+  look: >-
+    mimi_ant, a tiny white ant girl, rosy cheeks, little purple backpack,
+    two curly antennae with pink tips
+  voice: soft sweet girl

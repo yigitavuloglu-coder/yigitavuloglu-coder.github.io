@@ -1,0 +1,78 @@
+id: s4_boppy_dance
+type: song
+hook: >-
+  Dans çağrısı (chant): bu ayın viral "Dudi Dudi Dam Dam / Dodi Dodi Dum Dum" dansı — Anaya Rhymes 10M,
+  RIYA KIDS TV 2,3M, Milky Silky 1,4M (ID + HI). Kancayı alıp ÖZGÜN chant yazdık: "Boppy boppy boom boom"
+  her dilde aynı kalır (Baby Shark "doo doo" etkisi) → diller arası viral potansiyel. Hareketleri taklit ettiren sözler.
+bpm: 112
+style: "kids dance song, upbeat kids pop, punchy drums, synth bass, claps, group shouts, energetic female vocal, 112 bpm"
+structure: [intro, verse1, chorus, verse2, chorus, verse3, chorus, outro]
+title:
+  en: "Boppy Boom Dance 💃 Kids Dance Song | Clap, Jump, Spin! | Lulu & Bobo"
+  es: "Baile Boppy Bum 💃 Canción para Bailar | ¡Aplaude, Salta, Gira! | Lulu y Bobo"
+  pt: "Dança Boppy Bum 💃 Música para Dançar | Bata Palmas, Pule, Gire! | Lulu e Bobo"
+description:
+  en: "Boppy boppy boom boom! Clap your hands, tap your feet, jump up high and spin around. Dance along with Lulu and friends!"
+  es: "¡Boppy boppy bum bum! Aplaude, mueve los pies, salta alto y da una vuelta. ¡Baila con Lulu y sus amigos!"
+  pt: "Boppy boppy bum bum! Bata palmas, bata os pés, pule alto e dê uma volta. Dance com a Lulu e seus amigos!"
+tags:
+  en: [kids dance song, dance for kids, freeze dance, action song, nursery rhymes, lulu and bobo]
+  es: [canción para bailar, baile infantil, canciones de movimiento, canciones infantiles, lulu y bobo]
+  pt: [música para dançar, dança infantil, música de movimento, música infantil, lulu e bobo]
+thumbnail: "lulu_hedgehog, zipzip_frog and bobo_bear mid-jump dancing with arms up, colorful disco lights, plain bright magenta background"
+scenes:
+  intro:
+    - {chars: [lulu, zipzip], beats: 12, image: "a colorful kids dance stage with soft disco lights", motion: "lights turn on one by one, lulu and zipzip strike a pose"}
+  verse1:
+    - {chars: [lulu], image: "lulu clapping her hands on the dance stage", motion: "lulu claps three times to the beat", sing: true}
+    - {chars: [lulu], image: "lulu tapping her feet on the stage", motion: "lulu taps her feet left right left"}
+    - {chars: [lulu, zipzip], image: "lulu and zipzip wiggling side to side", motion: "both wiggle side to side in sync", sing: true}
+    - {chars: [lulu, zipzip], image: "lulu and zipzip crouching ready to jump", motion: "they crouch down and wiggle in anticipation"}
+  chorus:
+    - {chars: [lulu, zipzip], image: "lulu and zipzip doing a funny dance move with bent knees", motion: "they bounce down-down-up with fists pumping", sing: true}
+    - {chars: [lulu, zipzip, bobo], image: "three friends repeating the same bounce move", motion: "they bounce down-down-up again together"}
+    - {chars: [lulu], image: "lulu jumping high and spinning in the air", motion: "lulu jumps up and spins once, sparkles trail", sing: true}
+    - {chars: [lulu, zipzip, bobo], image: "friends touching the floor with both hands", motion: "everyone bends down and touches the ground, then pops up"}
+  verse2:
+    - {chars: [lulu], image: "lulu shaking her arms loosely like jelly", motion: "lulu shakes her arms wobbly like jelly", sing: true}
+    - {chars: [lulu], image: "lulu wiggling her body like a happy snake", motion: "lulu wiggles in a wave motion, giggling"}
+    - {chars: [zipzip], image: "zipzip hopping on the stage", motion: "zipzip hops three big hops", sing: true}
+    - {chars: [mimi], image: "tiny mimi twirling like a ballerina on a big speaker", motion: "mimi twirls round and round"}
+  verse3:
+    - {chars: [bobo], image: "bobo dancing slowly with big bear steps", motion: "bobo takes slow heavy funny steps, the stage wobbles", sing: true}
+    - {chars: [bobo, lulu], image: "lulu riding on bobo's shoulders dancing", motion: "bobo marches, lulu waves her arms"}
+    - {chars: [lulu, zipzip, mimi, bobo], image: "all friends in a line ready to follow", motion: "they point at camera inviting to dance", sing: true}
+    - {chars: [lulu, zipzip, mimi, bobo], image: "all friends holding up one, two, three fingers", motion: "they count with fingers then jump together"}
+  outro:
+    - {chars: [lulu, zipzip, mimi, bobo], beats: 12, image: "friends in a final dance pose, confetti falling", motion: "confetti falls, everyone freezes in a pose then waves"}
+lyrics:
+  en:
+    verse1: ["Clap your hands, clap clap clap,", "Tap your feet, tap tap tap,", "Wiggle, wiggle, side to side,", "Now get ready, jump up high!"]
+    chorus: ["Boppy boppy boom boom!", "Boppy boppy boom boom!", "Jump up high and spin around,", "Boppy boppy, touch the ground!"]
+    verse2: ["Shake your arms like jelly, shake!", "Wiggle like a happy snake!", "Zippy hops, hop hop hop,", "Mimi twirls and doesn't stop!"]
+    verse3: ["Daddy Bobo dances slow,", "Big bear steps, here we go!", "Everybody, follow me,", "Boppy dance, one, two, three!"]
+  es:
+    verse1: ["Aplaude fuerte, clap clap clap,", "Mueve los pies, tap tap tap,", "Muévete, muévete, de lado a lado,", "¡Prepárate, salta bien alto!"]
+    chorus: ["¡Boppy boppy bum bum!", "¡Boppy boppy bum bum!", "Salta alto y da una vuelta,", "Boppy boppy, ¡toca el suelo!"]
+    verse2: ["Sacude los brazos como gelatina,", "Muévete como una serpentina,", "Zipi salta, salta, salta,", "¡Mimi gira y no se cansa!"]
+    verse3: ["Papá Bobo baila despacio,", "Pasos de oso, ¡qué gracioso!", "Todos juntos, síganme,", "Boppy baile, ¡uno, dos, tres!"]
+  pt:
+    verse1: ["Bata palmas, clap clap clap,", "Bata os pés, tap tap tap,", "Mexe, mexe, pra lá e pra cá,", "Agora pula, vamos lá!"]
+    chorus: ["Boppy boppy bum bum!", "Boppy boppy bum bum!", "Pula alto e dá uma volta,", "Boppy boppy, mão no chão!"]
+    verse2: ["Balança os braços como gelatina,", "Rebola feito uma minhoquinha,", "Zipi pula, pula, pula,", "Mimi gira e não para!"]
+    verse3: ["Papai Bobo dança devagar,", "Passo de urso, vem dançar,", "Todo mundo, vem comigo,", "Boppy dança, um, dois, três, já!"]
+shorts:
+  - id: boppy_chorus
+    sections: [chorus]
+    title:
+      en: "Boppy boppy boom boom! 💃 Can you do it? #shorts #kidsdance"
+      es: "¡Boppy boppy bum bum! 💃 ¿Puedes hacerlo? #shorts #baileinfantil"
+      pt: "Boppy boppy bum bum! 💃 Você consegue? #shorts #dancainfantil"
+    description:
+      en: "Jump, spin and touch the ground! Full dance on Lulu & Bobo."
+      es: "¡Salta, gira y toca el suelo! Baile completo en Lulu y Bobo."
+      pt: "Pule, gire e mão no chão! Dança completa em Lulu e Bobo."
+    tags:
+      en: [dance, kids dance, boppy, shorts]
+      es: [baile, baile infantil, boppy, shorts]
+      pt: [dança, dança infantil, boppy, shorts]
