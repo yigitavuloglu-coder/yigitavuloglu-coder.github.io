@@ -1,0 +1,91 @@
+id: s6_i_share_with_you
+type: song
+hook: >-
+  Paylaşma değeri: Leo & PawPaw "Compartilhar é cuidar" (PT, 20 videoyla 26M; tek video bu ay 15M),
+  Minjee "Como Te Quiero, Te Comparto" (ES). Somut nesnelerle paylaşma: top, kurabiye, şemsiye.
+bpm: 96
+style: "sweet kids song, warm acoustic guitar, soft strings, glockenspiel, gentle claps, kind female vocal, 96 bpm, heartwarming"
+structure: [intro, verse1, chorus, verse2, chorus, verse3, chorus, outro]
+title:
+  en: "I Share With You 🤝❤️ Sharing Song for Kids | Good Manners | Lulu & Bobo"
+  es: "Te Comparto a Ti 🤝❤️ Canción de Compartir | Buenos Modales | Lulu y Bobo"
+  pt: "Eu Divido com Você 🤝❤️ Música de Dividir | Bons Modos | Lulu e Bobo"
+description:
+  en: "A ball, cookies and an umbrella: Lulu shares them all with her friends. A heartwarming song about sharing and kindness."
+  es: "Una pelota, galletas y un paraguas: Lulu lo comparte todo con sus amigos. Una canción tierna sobre compartir."
+  pt: "Uma bola, biscoitos e um guarda-chuva: Lulu divide tudo com os amigos. Uma música carinhosa sobre dividir."
+tags:
+  en: [sharing song, sharing is caring, good manners, kindness for kids, nursery rhymes, lulu and bobo]
+  es: [canción de compartir, compartir, buenos modales, valores para niños, lulu y bobo]
+  pt: [música de dividir, compartilhar, bons modos, valores para crianças, lulu e bobo]
+thumbnail: "lulu_hedgehog handing a cookie to tiny mimi_ant, both smiling, hearts floating, plain warm peach background"
+scenes:
+  intro:
+    - {chars: [lulu], beats: 12, image: "sunny park with a big tree, lulu holding a red ball", motion: "lulu bounces the ball and sees her friends coming"}
+  verse1:
+    - {chars: [lulu], image: "lulu holding up a big red ball proudly in the park", motion: "lulu lifts the ball up high", sing: true}
+    - {chars: [lulu, zipzip, mimi], image: "zipzip and mimi looking at the ball hopefully", motion: "lulu waves them over with a smile"}
+    - {chars: [lulu, zipzip], image: "lulu and zipzip sitting on grass rolling the ball to each other", motion: "the ball rolls back and forth between them", sing: true}
+    - {chars: [lulu, zipzip, mimi], image: "friends laughing together on the grass", motion: "they giggle and clap"}
+  chorus:
+    - {chars: [lulu, mimi], image: "lulu kneeling and handing something to tiny mimi", motion: "lulu gives, mimi receives and hugs it, hearts pop", sing: true}
+    - {chars: [lulu, zipzip], image: "lulu and zipzip high-fiving", motion: "they high five, little stars burst"}
+    - {chars: [lulu, zipzip, mimi], image: "close up of the three friends with big smiles", motion: "smiles grow wider, cheeks blush", sing: true}
+    - {chars: [lulu, zipzip, mimi, bobo], image: "all friends sitting side by side on a park bench", motion: "they sway side to side together"}
+  verse2:
+    - {chars: [lulu], image: "lulu opening a small lunch box with three round cookies", motion: "lulu opens the box, cookies shine", sing: true}
+    - {chars: [lulu, zipzip], image: "lulu giving one cookie to zipzip", motion: "zipzip takes a cookie and does a happy hop"}
+    - {chars: [lulu, mimi], image: "lulu giving a cookie to tiny mimi who holds it like a giant wheel", motion: "mimi rolls the giant cookie and laughs", sing: true}
+    - {chars: [lulu, zipzip, mimi], image: "three friends eating cookies together", motion: "they munch happily, crumbs sparkle"}
+  verse3:
+    - {chars: [lulu, zipzip], image: "light rain starting in the park, lulu opening a yellow umbrella", motion: "raindrops fall gently, umbrella pops open", sing: true}
+    - {chars: [lulu, zipzip, mimi], image: "friends squeezing together under the yellow umbrella", motion: "they huddle closer under the umbrella"}
+    - {chars: [bobo, lulu], image: "bobo arriving with a big green umbrella in the rain", motion: "bobo opens his big umbrella over everyone", sing: true}
+    - {chars: [lulu, zipzip, mimi, bobo], image: "everyone under the umbrellas, a rainbow appearing", motion: "rain stops, a rainbow appears, everyone looks up"}
+  outro:
+    - {chars: [lulu, zipzip, mimi, bobo], beats: 12, image: "friends holding hands under a rainbow", motion: "they wave bye-bye, hearts float up"}
+lyrics:
+  en:
+    verse1: ["I have a ball, a big red ball,", "Do you want to play? Come one, come all!", "I roll it to you, you roll it to me,", "Playing together, happy as can be!"]
+    chorus: ["I share with you, you share with me,", "Sharing is caring, one, two, three!", "When we share, we smile so wide,", "Friends together, side by side!"]
+    verse2: ["I have cookies, one, two, three,", "One for you and one for me!", "And one for Mimi, tiny and small,", "Now there's enough for all!"]
+    verse3: ["Rain is falling, drip, drop, drip,", "Share my umbrella, don't you slip!", "Daddy Bobo, come inside,", "Friends together, side by side!"]
+  es:
+    verse1: ["Tengo una pelota, roja y grande,", "¿Quieres jugar? ¡Ven, no te tardes!", "Te la ruedo a ti, me la ruedas a mí,", "¡Jugando juntos, qué feliz!"]
+    chorus: ["Te comparto a ti, me compartes a mí,", "Compartir es querer, ¡uno, dos, tres, sí!", "Cuando compartimos, sonreímos,", "¡Amigos juntos, siempre unidos!"]
+    verse2: ["Tengo galletas, una, dos, tres,", "Una para ti y otra para mí, ¿ves?", "Y una para Mimi, tan chiquitita,", "¡Hay para todos, qué bonito!"]
+    verse3: ["Está lloviendo, plic, plic, plic,", "Comparto mi paraguas, ¡ven aquí!", "Papá Bobo, ven también,", "¡Amigos juntos, qué bien!"]
+  pt:
+    verse1: ["Eu tenho uma bola, vermelha e grandona,", "Quer brincar comigo? Vem, que é bacana!", "Eu rolo pra você, você rola pra mim,", "Brincando juntinhos, é tão bom assim!"]
+    chorus: ["Eu divido com você, você divide comigo,", "Dividir é amar, um, dois, três, amigo!", "Quando a gente divide, sorri,", "Amigos juntinhos, aqui!"]
+    verse2: ["Eu tenho biscoitos, um, dois, três,", "Um pra você e um pra mim, cada um a sua vez!", "E um pra Mimi, tão pequenininha,", "Tem pra todo mundo, que gracinha!"]
+    verse3: ["Está chovendo, plic, plic, plic,", "Divido meu guarda-chuva, vem aqui!", "Papai Bobo, vem também,", "Amigos juntinhos, tudo bem!"]
+shorts:
+  - id: share_cookies
+    sections: [verse2, chorus]
+    title:
+      en: "One for you, one for me 🍪❤️ #shorts #kidssongs"
+      es: "Una para ti, una para mí 🍪❤️ #shorts #cancionesinfantiles"
+      pt: "Um pra você, um pra mim 🍪❤️ #shorts #musicainfantil"
+    description:
+      en: "Sharing is caring! Full song on Lulu & Bobo."
+      es: "¡Compartir es querer! Canción completa en Lulu y Bobo."
+      pt: "Dividir é amar! Música completa em Lulu e Bobo."
+    tags:
+      en: [sharing, kindness, kids, shorts]
+      es: [compartir, valores, niños, shorts]
+      pt: [dividir, valores, crianças, shorts]
+  - id: share_umbrella
+    sections: [verse3, chorus]
+    title:
+      en: "Rain, rain... share my umbrella! ☔🌈 #shorts #nurseryrhymes"
+      es: "Lluvia, lluvia... ¡comparto mi paraguas! ☔🌈 #shorts #cancionesinfantiles"
+      pt: "Chuva, chuva... divido meu guarda-chuva! ☔🌈 #shorts #musicainfantil"
+    description:
+      en: "Friends together, side by side! Full song on Lulu & Bobo."
+      es: "¡Amigos juntos, siempre unidos! Canción completa en Lulu y Bobo."
+      pt: "Amigos juntinhos! Música completa em Lulu e Bobo."
+    tags:
+      en: [rain, umbrella, sharing, shorts]
+      es: [lluvia, paraguas, compartir, shorts]
+      pt: [chuva, guarda-chuva, dividir, shorts]

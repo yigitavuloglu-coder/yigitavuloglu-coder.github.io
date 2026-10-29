@@ -9,7 +9,8 @@ paths:
 
 style: >-
   cute soft 3D cartoon for toddlers, rounded shapes, saturated pastel colors,
-  big shiny eyes, simple clean background, soft studio lighting, high detail, no text
+  big shiny eyes, simple clean background, soft studio lighting, high detail, no text,
+  16:9 wide shot with main characters centered (safe for 9:16 center crop)
 
 negative: >-
   scary, creepy, horror, extra fingers, deformed hands, distorted face, text,
@@ -17,15 +18,15 @@ negative: >-
 
 video:
   fps: 24
-  short: {w: 1080, h: 1920}
-  long: {w: 1920, h: 1080}
+  long: {w: 1920, h: 1080}   # ana format; her şey 16:9 üretilir
+  short: {w: 1080, h: 1920}  # Shorts uzun videodan merkez kırpılır
   clip_seconds: 5           # Wan 2.2 tek klip süresi
 
 tools:
   # Şarkı: ACE-Step 1.5 (MIT). Kendi CLI/API çağrına göre düzenle.
   music: >-
     python -m acestep.cli --prompt "{style}" --lyrics_file "{lyrics_file}"
-    --duration {duration} --output "{out}"
+    --bpm {bpm} --duration {duration} --output "{out}"
   # Vokal ayrımı (S2V'ye yalnız vokal verilir)
   stems: >-
     python -m demucs --two-stems=vocals -o "{out_dir}" "{song}"

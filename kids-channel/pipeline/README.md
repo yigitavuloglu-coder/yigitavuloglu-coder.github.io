@@ -1,64 +1,91 @@
 # Lulu & Bobo üretim hattı
 
-Bölüm YAML'ı → şarkı → vokal → sahne görseli → Wan2GP klipleri → FFmpeg montaj → metadata + kontrol listesi.
+Önce uzun video, Shorts ondan kesilir:
+
+```
+şarkı YAML'ı (söz EN/ES/PT + sahneler)
+  → ACE-Step şarkı (dil başına) → Demucs vokal
+  → Flux/SDXL + karakter LoRA görseller (16:9, karakter ortada)
+  → Wan2GP: I2V sahneler + S2V/InfiniteTalk şarkı söyleyen sahneler (nakarat bir kez render edilir)
+  → FFmpeg: 16:9 şarkı videosu + altyazı + -14 LUFS
+       ├─ shorts: bölüm aralığı → 9:16 merkez kırpma + altyazı + jingle
+       └─ compilation: şarkılar art arda ≥8 dk + jingle
+```
 
 ```
 pipeline/
   config.yaml            araç komut şablonları (ACE-Step, Demucs, görsel, Wan2GP i2v/s2v)
-  bible/characters.yaml  karakter görünüşü, LoRA, tetik kelime — tutarlılık kaynağı
-  episodes/week01/*.yaml haftanın 7 bölümü (söz, sahne, prompt, başlık, etiket — TR/EN)
+  bible/characters.yaml  karakter görünüşü, LoRA, tetik kelime, dillerdeki adları
+  episodes/week01/       6 şarkı (s*.yaml), 2 derleme (c*.yaml), schedule.yaml
   kc.py                  orkestratör
-  trends.py              haftalık YouTube trend taraması (yeni + hızlı büyüyen kanallar)
-  out/<bölüm>/<dil>/     çıktılar (git'e girmez)
+  trends.py              haftalık YouTube trend taraması
+  out/<id>/<dil>/        çıktılar (git'e girmez)
 ```
 
 ## Kurulum
 1. Python 3.10+, `pip install pyyaml`, `ffmpeg`.
 2. GPU makinede: [Wan2GP](https://github.com/deepbeepmeep/Wan2GP), [ACE-Step 1.5](https://github.com/ace-step/ACE-Step-1.5), `pip install demucs`, görsel üretim (ComfyUI veya diffusers + Flux/SDXL).
-3. `config.yaml > tools` içindeki komutları kendi kurulumuna göre düzenle. Şablonlar örnektir;
-   Wan2GP ve ACE-Step CLI argümanları sürüme göre değişir — kendi sürümünün `--help` çıktısına göre uyarla.
-4. Karakter LoRA'larını eğit (`bible/characters.yaml > lora`): her karakter için 20–30 tutarlı referans görsel.
-5. `assets/jingle.wav` (3 sn "Lu-lu-Bo-bo!") ekle — her videonun sonuna eklenir.
+3. `config.yaml > tools` komutlarını kendi kurulumuna göre düzenle. Şablonlar örnektir; Wan2GP ve
+   ACE-Step argümanları sürüme göre değişir — kendi sürümünün `--help` çıktısına göre uyarla.
+4. Karakter LoRA'larını eğit (`bible/characters.yaml > lora`): karakter başına 20–30 tutarlı referans görsel.
+5. `assets/jingle.wav` (3 sn "Lu-lu-Bo-bo!") ekle.
 
 ## Kullanım
 ```bash
-python kc.py validate episodes/week01                 # şema + süre kontrolü
-python kc.py plan     episodes/week01 --lang tr       # prompt, altyazı, metadata, checklist
-python kc.py run      episodes/week01 --lang tr --dry-run      # komutları out/*/jobs.sh'a yaz
-python kc.py run      episodes/week01 --lang tr                # gerçek üretim (GPU)
-python kc.py run      episodes/week01 --lang tr --placeholder  # GPU'suz uçtan uca test
-python kc.py run      episodes/week01 --lang en                # İngilizce versiyon
+python kc.py validate episodes/week01                       # şema, satır=sahne, Shorts ≤58 sn, derleme ≥8 dk
+python kc.py plan     episodes/week01 --lang en             # prompt, söz, altyazı, metadata, checklist
+python kc.py run      episodes/week01 --lang en --dry-run   # komutları out/*/jobs.sh'a yaz
+python kc.py run      episodes/week01 --lang en             # gerçek üretim (GPU)
+python kc.py run      episodes/week01 --lang es             # İspanyolca: aynı görseller değil, aynı prompt'lar
+python kc.py run      episodes/week01 --lang en --placeholder   # GPU'suz uçtan uca test
 ```
-- Var olan çıktılar atlanır: yarıda kalan iş aynı komutla devam eder. Beğenmediğin bir klibi sil, tekrar çalıştır.
-- `sing: true` sahneler vokal parçasıyla S2V (ağız senkronu), diğerleri I2V ile üretilir.
-- Derleme bölümü (`compile:`) önce listelenen bölümlerin bitmiş olmasını ister; dikey Shorts'u bulanık arka planla 16:9'a yerleştirir.
+- Var olan çıktılar atlanır; beğenmediğin klibi sil, tekrar çalıştır.
+- Şarkı üretildikten sonra sahne süreleri gerçek şarkı süresine orantılı yayılır. ACE-Step tempoyu
+  birebir tutmazsa altyazı kayabilir — kontrol listesinde senkronu mutlaka izle.
+- Görseller dil klasörüne göre ayrı üretilir. GPU tasarrufu için EN'deki `img/` ve `clips/` klasörlerini
+  diğer dillere kopyalayabilirsin; sadece `sing: true` sahnelerin S2V klipleri dile özel kalmalı.
 
-## Her bölüm için çıktı
+## Bölüm şeması (`type: song`)
+```yaml
+id: s1_colorful_trucks
+type: song
+bpm: 100                 # beats_per_line (vars. 8) ile her söz satırı = 1 sahne süresi
+structure: [intro, verse1, chorus, verse2, chorus, verse3, chorus, outro]
+scenes:                  # bölüm başına sahne listesi; intro/outro'da `beats` ile süre
+  verse1: [{chars: [lulu], image: "...", motion: "...", sing: true}, ...]
+lyrics:                  # her dilde her bölümün satır sayısı = o bölümün sahne sayısı
+  en: {verse1: [...], chorus: [...]}
+  es: {...}
+shorts:                  # structure içinde ardışık bölümler; ilk geçtiği yerden kesilir
+  - {id: trucks_chorus, sections: [chorus], title: {en: ..., es: ...}, ...}
+```
+
+## Her şarkı için çıktı (`out/<id>/<dil>/`)
 | Dosya | İçerik |
 |---|---|
-| `<id>_<dil>.mp4` | Yayına hazır video (altyazı + -14 LUFS + jingle) |
-| `metadata.json` | Başlık, açıklama (+AI beyanı), etiketler, Made for Kids, thumbnail prompt'u |
-| `checklist.md` | Yayın öncesi insan kontrolü — **işaretlenmeden yükleme yok** |
-| `jobs.sh` | Çalıştırılan/çalıştırılacak araç komutları |
+| `<id>_<dil>.mp4` | 16:9 şarkı videosu (derlemelerin yapı taşı) |
+| `short_<shortid>_<dil>.mp4` + `.json` | Yayına hazır Shorts + başlık/açıklama/etiket |
+| `metadata.json`, `checklist.md` | Metadata (Made for Kids, AI beyanı) ve yayın öncesi kontrol |
+| `lyrics.txt`, `subs.srt`, `jobs.sh` | ACE-Step sözü, altyazı, araç komutları |
+
+## Hafta 1 yayın takvimi (`episodes/week01/schedule.yaml`)
+| Gün | Shorts | Uzun video |
+|---|---|---|
+| 1 | Beep beep! Colorful trucks 🚚 | — |
+| 2 | Where is Lulu? Peekaboo 🙈 | — |
+| 3 | Boppy boppy boom boom! 💃 | — |
+| 4 | Is it candy? STOP! 💊 | **Trucks + Peekaboo + Boppy Dance** (~8,5 dk) |
+| 5 | One big bite... POP! 🦷 | — |
+| 6 | One for you, one for me 🍪 | — |
+| 7 | Share my umbrella ☔ | **Lulu & Bobo Kids Songs** (~17 dk) |
+
+EN ve ES kanallarına aynı gün; saatler hedef pazarın yerel saatine göre (`schedule.yaml`).
+İlk haftadan sonra Studio > Analytics > "İzleyicileriniz ne zaman YouTube'da" verisine göre ayarla.
 
 ## Haftalık döngü
 | Gün | İş |
 |---|---|
-| Pzt | `python trends.py trends.json` → yeni ve hızlı büyüyen kanallar |
-| Sal | En iyi 3 kancayı seç, `episodes/weekNN/` altında YAML yaz (week01 şablon) |
-| Çar–Cmt | Üretim + kontrol listesi |
-| Paz | Gelecek haftanın 7 videosunu YouTube Studio'da zamanla (stokta hep 7 gün) |
-
-## Hafta 1 yayın takvimi
-| Gün | Bölüm | Süre | Kanca |
-|---|---|---|---|
-| Pzt | Havuç – Carrot (sebzeler, iki dilli) | 20 sn | Telugu Learning with Anika |
-| Sal | Lolipop seviyor musun? (sürpriz çilek) | 13 sn | Father-daughter show |
-| Çar | Lulu'nun sabah rutini | 34 sn | SM Bangla Daily |
-| Per | Sihirli top makinesi (renkler) | 25 sn | Jugnu Kids |
-| Cum | Kemerini tak, klik klik! | 30 sn | Bubu Arabic / Lunito |
-| Cmt | Minik Mimi yardıma koşuyor | 50 sn | Agile Mind Cartoons |
-| Paz | Haftanın derlemesi (16:9) | ~3 dk | Dino World / Cocomelon |
-
-Önerilen yayın saati (TR): hafta içi 17:00–18:00, hafta sonu 09:00–10:00 (ebeveyn ekran saatleri).
-İlk haftadan sonra YouTube Studio > Analytics > "İzleyicileriniz ne zaman YouTube'da" verisine göre ayarla.
+| Pzt | `python trends.py trends.json` → bu ay yükselen kancalar ve yeni kanallar |
+| Sal | En güçlü 4–6 kancayı seç, `episodes/weekNN/` altında şarkı YAML'larını yaz (week01 şablon) |
+| Çar–Cmt | Üretim + kontrol listesi (EN önce, sonra ES/PT) |
+| Paz | Gelecek haftanın 7 Shorts + 2 uzun videosunu zamanla (stokta hep 1 hafta) |

@@ -1,0 +1,77 @@
+id: s3_peekaboo
+type: song
+hook: >-
+  Saklambaç/ce-ee: Dino World "Play Peekaboo with a Cheeky Little Dino!" (17 dk, 85 günde 44M kanal izlenmesi),
+  NIOMAGIC "Non-Stop Baby Giggles" (29 dk). Her kıtada "1, 2, 3... peekaboo!" sürprizi ve kıkırdama.
+bpm: 100
+style: "baby song, soft xylophone, music box, giggles, gentle claps, sweet female vocal, 100 bpm, playful surprise"
+structure: [intro, verse1, chorus, verse2, chorus, verse3, chorus, outro]
+title:
+  en: "Peekaboo Song 🙈 Where Are You? | Hide and Seek | Lulu & Bobo Baby Songs"
+  es: "Canción del Cu-cú 🙈 ¿Dónde Estás? | Escondidas | Lulu y Bobo"
+  pt: "Música do Achou 🙈 Cadê Você? | Esconde-esconde | Lulu e Bobo"
+description:
+  en: "Where is Lulu? Where is Zippy? One, two, three... peekaboo! A giggly hide-and-seek song for babies and toddlers."
+  es: "¿Dónde está Lulu? ¿Dónde está Zipi? Uno, dos, tres... ¡cu-cú! Una canción de escondidas para bebés."
+  pt: "Cadê a Lulu? Cadê o Zipi? Um, dois, três... achou! Uma música de esconde-esconde para bebês."
+tags:
+  en: [peekaboo song, hide and seek, baby songs, toddler songs, nursery rhymes, lulu and bobo]
+  es: [canción cucú, escondidas, canciones para bebés, canciones infantiles, lulu y bobo]
+  pt: [música achou, esconde esconde, música para bebê, música infantil, lulu e bobo]
+thumbnail: "lulu_hedgehog peeking from behind a pastel curtain with a huge giggle, hands near her face, plain light purple background"
+scenes:
+  intro:
+    - {chars: [bobo], beats: 12, image: "cozy living room with curtains, toy box and flowers, bobo covering his eyes", motion: "bobo covers his eyes and counts, friends tiptoe away to hide"}
+  verse1:
+    - {chars: [bobo], image: "bobo looking around the living room, hand above his eyes", motion: "bobo looks left and right, curious", sing: true}
+    - {chars: [lulu], image: "a pastel curtain with tiny pink hedgehog spikes poking out", motion: "the curtain wiggles, spikes poke out and hide"}
+    - {chars: [bobo], image: "bobo tiptoeing toward the curtain", motion: "bobo tiptoes closer, counting on his fingers", sing: true}
+    - {chars: [lulu], image: "lulu popping out from the curtain with a big laugh", motion: "curtain opens, lulu jumps out giggling, confetti sparkles"}
+  chorus:
+    - {chars: [lulu], image: "lulu covering her eyes with both hands", motion: "lulu hides her eyes then opens hands wide with a surprised face", sing: true}
+    - {chars: [lulu, zipzip], image: "lulu and zipzip peeking from behind a sofa", motion: "they pop up and duck down again, giggling"}
+    - {chars: [lulu], image: "close up of lulu laughing with eyes closed", motion: "lulu giggles happily, cheeks blush", sing: true}
+    - {chars: [lulu, bobo], image: "bobo lifting lulu up in a happy hug", motion: "bobo spins lulu around gently, both laughing"}
+  verse2:
+    - {chars: [bobo, lulu], image: "bobo and lulu searching together", motion: "they look under a cushion and shrug", sing: true}
+    - {chars: [zipzip], image: "a toy box with its lid slightly open and a blue frog hand sticking out", motion: "the lid lifts a tiny bit and closes"}
+    - {chars: [lulu], image: "lulu kneeling next to a chair and toy box, counting", motion: "lulu counts one two three on her fingers", sing: true}
+    - {chars: [zipzip], image: "zipzip jumping out of the toy box, ribbit", motion: "zipzip springs out of the box with toys flying softly"}
+  verse3:
+    - {chars: [lulu, zipzip], image: "lulu and zipzip looking at a big garden flower pot by the window", motion: "they lean in close to the flower", sing: true}
+    - {chars: [mimi], image: "tiny mimi hiding inside a big pink flower in sunlight", motion: "flower petals move and mimi's antennae peek out"}
+    - {chars: [mimi], image: "mimi popping up from the flower waving", motion: "mimi pops up with a tiny squeak, petals flutter", sing: true}
+    - {chars: [lulu, zipzip, mimi], image: "friends pointing at bobo who hides badly behind a small plant, his big body visible", motion: "everyone laughs because bobo is too big to hide", sing: true}
+  outro:
+    - {chars: [lulu, bobo, zipzip, mimi], beats: 12, image: "all friends sitting together on the sofa covering eyes", motion: "they open their hands together and wave peekaboo bye-bye"}
+lyrics:
+  en:
+    verse1: ["Where is Lulu? Where, oh where?", "Behind the curtain? Over there?", "One, two, three... peekaboo!", "There she is! I see you!"]
+    chorus: ["Peekaboo, peekaboo,", "Hiding friends, I see you!", "Peekaboo, peekaboo,", "Giggle, giggle, I found you!"]
+    verse2: ["Where is Zippy? Where, oh where?", "In the toy box? Under the chair?", "One, two, three... peekaboo!", "Ribbit, ribbit! I see you!"]
+    verse3: ["Where is Mimi? Tiny one!", "In the flower, in the sun?", "One, two, three... peekaboo!", "Daddy Bobo, now it's you!"]
+  es:
+    verse1: ["¿Dónde está Lulu? ¿Dónde estará?", "¿Tras la cortina? ¿Por allá?", "Uno, dos, tres... ¡cu-cú!", "¡Ahí está Lulu, eres tú!"]
+    chorus: ["Cu-cú, cu-cú,", "¿Quién se esconde? ¿Eres tú?", "Cu-cú, cu-cú,", "¡Jijijí, te encontré, cu-cú!"]
+    verse2: ["¿Dónde está Zipi? ¿Dónde estará?", "¿En la caja? ¿Bajo el sofá?", "Uno, dos, tres... ¡cu-cú!", "¡Croac, croac! ¡Eres tú!"]
+    verse3: ["¿Dónde está Mimi, tan chiquitita?", "¿En la flor, bajo la hojita?", "Uno, dos, tres... ¡cu-cú!", "¡Papá Bobo, ahora tú!"]
+  pt:
+    verse1: ["Cadê a Lulu? Cadê, cadê?", "Atrás da cortina? Vamos ver!", "Um, dois, três... achou!", "Olha a Lulu! Ela voltou!"]
+    chorus: ["Achou, achou,", "Quem se escondeu? Achou!", "Achou, achou,", "Que risada! Te encontrei, achou!"]
+    verse2: ["Cadê o Zipi? Cadê, cadê?", "Na caixa de brinquedos? Vamos ver!", "Um, dois, três... achou!", "Croac, croac! Ele pulou!"]
+    verse3: ["Cadê a Mimi, tão pequenininha?", "Na florzinha, na folhinha?", "Um, dois, três... achou!", "Papai Bobo, agora é você!"]
+shorts:
+  - id: peekaboo_lulu
+    sections: [verse1, chorus]
+    title:
+      en: "Where is Lulu? 🙈 Peekaboo! #shorts #babysongs"
+      es: "¿Dónde está Lulu? 🙈 ¡Cu-cú! #shorts #cancionesparabebes"
+      pt: "Cadê a Lulu? 🙈 Achou! #shorts #musicaparabebe"
+    description:
+      en: "One, two, three... peekaboo! Full song on Lulu & Bobo."
+      es: "Uno, dos, tres... ¡cu-cú! Canción completa en Lulu y Bobo."
+      pt: "Um, dois, três... achou! Música completa em Lulu e Bobo."
+    tags:
+      en: [peekaboo, baby, giggles, shorts]
+      es: [cucú, bebé, risas, shorts]
+      pt: [achou, bebê, risadas, shorts]

@@ -1,0 +1,11 @@
+# Hafta 1 yayın takvimi. Her gün 1 Shorts; Perşembe ve Pazar uzun video.
+# Kanallar: EN (ana) + ES aynı gün; PT 3. haftadan itibaren (bkz. PLAN.md).
+# Saatler hedef pazarın yerel saatidir: EN → ABD Doğu, ES → Meksika/Kolombiya, PT → Brezilya.
+days:
+  1: {shorts: s1_colorful_trucks/trucks_chorus, time: "16:00"}
+  2: {shorts: s3_peekaboo/peekaboo_lulu, time: "16:00"}
+  3: {shorts: s4_boppy_dance/boppy_chorus, time: "16:00"}
+  4: {shorts: s2_medicine_not_candy/medicine_story, long: c1_trucks_peekaboo_mix, time: "16:00", long_time: "09:00"}
+  5: {shorts: s5_wiggly_tooth/tooth_pop, time: "16:00"}
+  6: {shorts: s6_i_share_with_you/share_cookies, time: "09:00"}
+  7: {shorts: s6_i_share_with_you/share_umbrella, long: c2_week1_all_songs, time: "16:00", long_time: "09:00"}

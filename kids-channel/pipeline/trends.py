@@ -1,4 +1,4 @@
-"""Haftalık trend taraması: yeni ve hızlı büyüyen çocuk kanallarını bulur.
+"""Haftalık trend taraması: bu ay yükselen çocuk videoları ve yeni, hızlı büyüyen kanallar.
 
   python trends.py trends.json
 """
@@ -7,14 +7,14 @@ from concurrent.futures import ThreadPoolExecutor
 
 UA = {"User-Agent": "Mozilla/5.0", "Accept-Language": "en-US,en"}
 # sp=CAMSAggE: sort by views, uploaded this month; CAMSAggD: this week
-FILTERS = ["CAMSAggE", "CAMSAggD"]
+FILTERS = ["CAMSAggE", "CAMSBAgEGAM", "CAMSBAgEGAI"]  # bu ay: tümü, 4-20 dk, >20 dk
 QUERIES = [
-    "nursery rhymes", "kids songs", "cartoon for kids", "baby songs", "kids cartoon animation",
-    "bedtime story for kids", "learn colors for kids", "toddler learning video", "kids story animation",
-    "çocuk şarkıları", "çizgi film çocuk", "bebek şarkıları", "masal dinle çocuk",
-    "canciones infantiles", "dibujos animados para niños", "musicas infantis", "desenho infantil",
-    "kinderlieder", "comptines pour enfants", "أغاني أطفال", "детские песенки", "मराठी बालगीत",
-    "hindi rhymes for kids", "lagu anak", "bài hát thiếu nhi", "童谣", "子供 歌",
+    "nursery rhymes", "kids songs", "baby songs", "toddler learning", "cartoon for kids", "kids songs compilation",
+    "bedtime songs for babies", "learn colors", "abc song", "kids story",
+    "canciones infantiles", "canciones para niños", "dibujos animados para niños", "videos para bebés", "cuentos infantiles",
+    "musica infantil", "desenho animado infantil", "musicas para bebe",
+    "hindi rhymes", "बच्चों के गाने", "अंग्रेजी कविता",
+    "أغاني أطفال", "lagu anak", "kinderlieder", "comptines", "детские песни", "童谣", "子供 歌",
 ]
 
 def get(url):

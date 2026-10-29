@@ -1,0 +1,77 @@
+id: s2_medicine_not_candy
+type: song
+hook: >-
+  Güvenlik masalı: More Good Stories "¡Eso No Es Dulce! Las Medicinas No Son Dulces" (69 günde 92K abone,
+  günde ~1,8M izlenme, ES). "Dur!" anı kanca; mesaj: ilaç yalnızca bir yetişkinle.
+bpm: 100
+style: "children's story song, gentle piano, pizzicato, playful woodblock, warm female vocal, 100 bpm, clear lyrics"
+structure: [intro, verse1, chorus, verse2, chorus, verse3, chorus, outro]
+title:
+  en: "Medicine Is Not Candy! 💊🚫 Safety Song for Kids | Lulu & Bobo"
+  es: "¡La Medicina No Es Un Dulce! 💊🚫 Canción de Seguridad | Lulu y Bobo"
+  pt: "Remédio Não É Doce! 💊🚫 Música de Segurança | Lulu e Bobo"
+description:
+  en: "Lulu finds colorful pills that look like candy. Stop! Medicine is not for play. Always ask a grown-up. A safety song for little ones."
+  es: "Lulu encuentra pastillas de colores que parecen dulces. ¡Alto! La medicina no es para jugar. Siempre pide ayuda a un adulto."
+  pt: "Lulu encontra comprimidos coloridos que parecem doces. Pare! Remédio não é pra brincar. Sempre chame um adulto."
+tags:
+  en: [safety song, medicine safety, kids safety, good habits, nursery rhymes, lulu and bobo]
+  es: [canción de seguridad, medicinas, seguridad para niños, buenos hábitos, lulu y bobo]
+  pt: [música de segurança, remédio, segurança infantil, bons hábitos, lulu e bobo]
+thumbnail: "lulu_hedgehog reaching toward a medicine bottle with pink pills, bobo_bear holding up a big hand saying stop, red stop sign icon, plain soft yellow background"
+scenes:
+  intro:
+    - {chars: [lulu], beats: 12, image: "cozy kitchen, lulu playing alone with a teddy bear", motion: "lulu looks around curiously and spots something on a low shelf"}
+  verse1:
+    - {chars: [lulu], image: "lulu standing on tiptoes near a kitchen shelf with a closed medicine bottle", motion: "lulu reaches up slowly, eyes wide with curiosity", sing: true}
+    - {chars: [lulu], image: "close up of a bottle with small pink round pills seen through clear plastic", motion: "pills sparkle like candy, lulu's eyes shine"}
+    - {chars: [lulu], image: "lulu thinking, a thought bubble with candies", motion: "lulu licks her lips and tilts her head", sing: true}
+    - {chars: [lulu], image: "lulu holding the closed bottle, puzzled face", motion: "lulu shakes the bottle gently, it rattles, she looks at the camera"}
+  chorus:
+    - {chars: [bobo], image: "bobo raising a big gentle hand like a stop sign, kind but serious face", motion: "bobo raises his hand, a big friendly red stop sign appears", sing: true}
+    - {chars: [lulu, bobo], image: "bobo kneeling and gently taking the bottle from lulu", motion: "bobo puts the bottle high on a shelf, shakes his head kindly"}
+    - {chars: [lulu, bobo], image: "lulu holding bobo's hand, both looking at the camera", motion: "lulu nods, bobo points to himself as the grown-up", sing: true}
+    - {chars: [lulu, bobo], image: "bobo hugging lulu in the kitchen, hearts around", motion: "they hug, little hearts float up", sing: true}
+  verse2:
+    - {chars: [bobo], image: "bobo crouching at lulu's eye level, explaining with a warm smile", motion: "bobo talks gently and holds one finger up", sing: true}
+    - {chars: [lulu], image: "lulu in bed with a little cold, red nose, blanket", motion: "lulu sneezes softly, a tissue floats"}
+    - {chars: [lulu, bobo], image: "bobo giving lulu syrup with a small measuring spoon", motion: "bobo carefully pours a tiny spoon, lulu takes it", sing: true}
+    - {chars: [lulu], image: "lulu feeling better, jumping on the bed with sunshine", motion: "lulu smiles brightly and stretches, sun shines in"}
+  verse3:
+    - {chars: [lulu, zipzip], image: "lulu talking to zipzip in a playroom", motion: "lulu explains, waving her finger like a teacher", sing: true}
+    - {chars: [zipzip], image: "zipzip looking at a closed bottle on a table with curious eyes", motion: "zipzip stops and pulls his hands back"}
+    - {chars: [lulu, zipzip], image: "lulu and zipzip running to bobo and pointing at the bottle", motion: "they run and point together", sing: true}
+    - {chars: [lulu, zipzip, bobo], image: "bobo giving both a high five", motion: "high five, sparkles, everyone cheers", sing: true}
+  outro:
+    - {chars: [lulu, bobo, zipzip], beats: 12, image: "friends waving at camera, a friendly stop sign badge on lulu's overalls", motion: "everyone waves bye-bye and smiles"}
+lyrics:
+  en:
+    verse1: ["Lulu found a bottle on the kitchen shelf,", "Little pink dots, she wants one for herself!", "Pink and round, they look like sweets,", "Are they candy? Are they treats?"]
+    chorus: ["Stop! Stop! That's not candy!", "Medicine is not for play!", "Ask a grown-up, ask a grown-up,", "That's the safe and healthy way!"]
+    verse2: ["Daddy Bobo says, “Lulu, wait!", "Medicine helps when we're sick, but it's not food for your plate.", "Only grown-ups give it, in a tiny spoon,", "When the doctor says so, you'll feel better soon!”"]
+    verse3: ["Now Lulu knows the rule, she tells Zippy too:", "“Don't touch the bottles, here is what to do:", "Find a grown-up, point and say,", "Medicine is not for play!”"]
+  es:
+    verse1: ["Lulu encontró un frasco en la cocina,", "Bolitas de colores, ¡qué cosa tan fina!", "Rosaditas y redondas como dulces,", "¿Serán caramelos? ¿Me los como? ¡Ups!"]
+    chorus: ["¡Alto, alto! ¡No es un dulce!", "¡La medicina no es para jugar!", "Pide ayuda a un adulto,", "¡Así nos vamos a cuidar!"]
+    verse2: ["Papá Bobo llega y dice: “¡Lulu, espera!", "La medicina es para cuando uno se enferma de veras.", "Solo un adulto te la da con cucharita,", "Y cuando el doctor lo dice, te sientes bien prontito.”"]
+    verse3: ["Ahora Lulu sabe, y le cuenta a Zipi:", "“No toques los frascos, escucha aquí:", "Busca a un adulto y dile así:", "¡La medicina no es para jugar!”"]
+  pt:
+    verse1: ["Lulu achou um vidrinho na cozinha,", "Bolinhas coloridas, que coisinha!", "Rosinhas e redondas como doces,", "Será que é bala? Será que eu posso?"]
+    chorus: ["Pare! Pare! Isso não é doce!", "Remédio não é pra brincar!", "Chame um adulto, chame um adulto,", "É assim que vamos nos cuidar!"]
+    verse2: ["Papai Bobo chega e diz: “Lulu, espera!", "Remédio é só quando a gente está doente de verdade.", "Só um adulto te dá, numa colherzinha,", "Quando o médico manda, você melhora rapidinho!”"]
+    verse3: ["Agora Lulu sabe e conta pro Zipi:", "“Não mexa nos vidrinhos, escuta aqui:", "Procure um adulto e diga assim:", "Remédio não é pra brincar!”"]
+shorts:
+  - id: medicine_story
+    sections: [verse1, chorus]
+    title:
+      en: "Is it candy? 🍬💊 STOP! #shorts #safetyforkids"
+      es: "¿Es un dulce? 🍬💊 ¡ALTO! #shorts #cuentosinfantiles"
+      pt: "É doce? 🍬💊 PARE! #shorts #historiainfantil"
+    description:
+      en: "Medicine is not candy! Always ask a grown-up. Full song on Lulu & Bobo."
+      es: "¡La medicina no es un dulce! Siempre pide ayuda a un adulto. Canción completa en Lulu y Bobo."
+      pt: "Remédio não é doce! Sempre chame um adulto. Música completa em Lulu e Bobo."
+    tags:
+      en: [safety, medicine, kids, shorts]
+      es: [seguridad, medicina, niños, shorts]
+      pt: [segurança, remédio, crianças, shorts]

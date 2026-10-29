@@ -1,14 +1,14 @@
 # Lulu & Bobo — Çocuk Kanalı İşletme Planı
 
-> Hedef: 0–6 yaş, çok dilli (TR → EN → ES → AR → PT → ID), AI destekli ama insan
-> denetimli 3D çizgi film kanalı. İlk 90 günde YPP (para kazanma) kabulü.
+> Hedef: 0–6 yaş, global, çok dilli (EN + ES → PT → HI/ID/AR), AI destekli ama insan
+> denetimli 3D çizgi film kanalı. Önce uzun video; Shorts uzun videodan kesilir. İlk 90 günde YPP kabulü.
 
 ## 1. Marka
 
 | Öğe | Karar |
 |---|---|
 | Kanal adı | **Lulu & Bobo** (her dilde okunur; yayından önce marka/isim taraması yapılacak) |
-| Slogan | TR "Söyle, Öğren, Gül!" · EN "Sing, Learn, Giggle!" |
+| Slogan | EN "Sing, Learn, Giggle!" · ES "¡Canta, Aprende, Ríe!" · PT "Cante, Aprenda, Ria!" |
 | Görsel stil | Yumuşak 3D, yuvarlak hatlar, doygun pastel, tek düz arka plan, büyük gözler |
 | Ses | Kanal sesi: sıcak, neşeli genç kadın vokal (sabit ACE-Step ayarı / LoRA) |
 | Jingle | 3 sn'lik "Lu-lu-Bo-bo!" — her videonun sonunda (marka hafızası) |
@@ -16,7 +16,7 @@
 ### Karakterler (özgün — mevcut hiçbir markaya benzetilmez)
 - **Lulu** — 3 yaşında kirpi kız. Mercan rengi dikenleri, sarı tulum, meraklı, biraz yaramaz. Kancaların öznesi.
 - **Bobo** — Lulu'nun babası, iri, sakin, kahverengi ayı. Yeşil kazak. "Ebeveyn + çocuk" kancası.
-- **Zıpzıp** — Mavi kurbağa arkadaş. Komik düşmeler, ses efektleri.
+- **Zippy / Zipi** (TR: Zıpzıp) — Mavi kurbağa arkadaş. Komik düşmeler, ses efektleri.
 - **Mimi** — Küçük beyaz karınca. Değerler hikâyelerinde "küçük ama yardımsever".
 
 Karakter tutarlılığı: her karakter için 20–30 görsellik referans seti → Flux/SDXL karakter LoRA'sı →
@@ -24,27 +24,49 @@ tüm sahne görselleri bu LoRA ile üretilir → Wan2GP image-to-video. (`pipeli
 
 ## 2. İçerik stratejisi
 
-**Kanca kopyalama kuralı:** Viral formatı (konu, süre, ritim, kanca saniyesi, kamera, başlık kalıbı) 1:1
+**Kanca kopyalama kuralı:** Viral formatı (konu, süre, ritim, kanca anı, kamera, başlık kalıbı) 1:1
 alırız. Rakibin özgün söz/melodisini, karelerini, karakter tasarımını ve thumbnail'ini **almayız**.
 Halk malı tekerlemeler serbesttir; melodiyi kendimiz üretiriz.
 
-### Yayın takvimi (her gün)
-| Gün | Format | Süre | Kanca kaynağı |
-|---|---|---|---|
-| Pzt | İki dilli kelime şarkısı | 20 sn Shorts | Telugu Learning with Anika |
-| Sal | Ebeveyn-çocuk sürpriz | 10–15 sn Shorts | Father-daughter show |
-| Çar | Komik günlük rutin | 30–40 sn Shorts | SM Bangla Daily |
-| Per | Renk öğrenme makinesi | 25 sn Shorts | Jugnu Kids |
-| Cum | Güvenlik/alışkanlık şarkısı | 30 sn Shorts + 2–3 dk uzun | Bubu Arabic, Lunito |
-| Cmt | Değerler masalı | 60 sn Shorts | Agile Mind, Leo & PawPaw |
-| Paz | **Uzun derleme** | 15–30 dk (16:9) | Dino World, Cocomelon (gelir) |
+### Model: önce uzun video, Shorts ondan
+```
+Haftada 6 yeni şarkı (her biri ~2 dk, 16:9)
+  ├─ 2 uzun derleme: Perşembe ~8,5 dk (4 şarkı) · Pazar ~17 dk (6 şarkı + 2 tekrar)  → reklam arası (≥8 dk)
+  └─ 7 Shorts: her şarkının en güçlü 20–40 sn'lik bölümü, otomatik 9:16 kesim     → keşif/büyüme
+```
+- Bir şarkı → 1–2 Shorts + birden fazla derlemede tekrar kullanım. Haftada 8 şarkı üretmek yerine 6.
+- Shorts'ta duyulan nakarat uzun videodakiyle aynı: çocuk tanır, ebeveyn uzun videoyu açar.
+- **Made for Kids kısıtı:** kart, bitiş ekranı ve yorum kapalı; Shorts'taki "ilgili video" bağlantısının
+  çalışıp çalışmadığını ilk yüklemede Studio'da kontrol et. Çalışmıyorsa köprü = aynı karakter, aynı
+  thumbnail dili, şarkı adının başlıkta aynen geçmesi ve oynatma listeleri.
+- 2. haftadan itibaren derlemeler eski şarkılarla büyür: 4. haftada 20–30 dk, 8. haftada 45–60 dk.
 
-Shorts büyütür, uzun video para kazandırır. Her Shorts'un 16:9 versiyonu derlemeye girer.
+### Hafta 1 — Ekim 2026 trend taramasına göre seçilen kancalar
+(Tarama: 28 sorgu × 3 filtre, 13 dil, son 30 gün, 1.617 video / 591 kanal — `pipeline/trends.py`)
+
+| Şarkı | Kanca | Trend kanıtı |
+|---|---|---|
+| Colorful Trucks 🚚 | Araçlar + renk öğrenme | Miuki "Naik Truk" 11M (bu ay), RoboSquad 22 dk araç derlemesi |
+| Medicine Is Not Candy 💊 | Güvenlik masalı, "Dur!" anı | More Good Stories (ES): 69 günde günlük ~1,8M izlenme |
+| Peekaboo 🙈 | Saklambaç + kıkırdama | Dino World "Peekaboo" 17 dk; NIOMAGIC 29 dk "Baby Giggles" |
+| Boppy Boom Dance 💃 | Viral dans chant'ı (özgün) | "Dudi Dudi Dam Dam" dansı: 10M + 2,3M + 1,4M (ID/HI, bu ay) |
+| My Wiggly Tooth 🦷 | Diş düştü anı + fırçalama | KingFoo Kids (ES) "¡Se le cayó un diente!" |
+| I Share With You 🤝 | Paylaşma değeri | Leo & PawPaw (PT) tek video 15M; Minjee "Te Comparto" (ES) |
+
+**Mevsim:** Kasım ortasından itibaren Noel/yılbaşı şarkıları çocuk kanallarında yılın en yüksek
+trafiğini alır → 3. hafta Noel şarkıları (Jingle Bells gibi halk malı melodiler + özgün sözler),
+4. hafta "Christmas Songs for Kids" uzun derlemesi.
 
 ### Dil açılımı
-1. Ay 1: Sadece TR+EN iki dilli içerik (tek kanal).
-2. Ay 2: Tutan (>100K izlenme) videoların EN-only ve ES kanalları.
-3. Ay 3+: AR, PT, ID. Her dil **ayrı seslendirme + yerelleştirilmiş söz** (aynı dosyanın kopyası değil).
+| Faz | Diller | Neden |
+|---|---|---|
+| Hafta 1 | **EN + ES** (iki ayrı kanal, aynı gün) | En büyük çocuk izleyicisi; ES'te yeni kanallar hızla büyüyor (More Good Stories, Ye-Ye Yeti, Lunito) |
+| Hafta 3 | **PT** (Brezilya) | Leo & PawPaw örneği: 20 videoyla 26M; rekabet EN'den düşük |
+| Ay 2+ | HI, ID, AR | Hacim çok yüksek ama RPM düşük ve klon kanalı dolu; ancak EN/ES tuttuktan sonra |
+
+Her dil = ayrı kanal + ayrı seslendirme + yerelleştirilmiş söz (aynı dosyanın kopyası değil — "inauthentic
+content" riskini azaltır). Görüntü dillerde ortak; sadece ses, altyazı ve metadata değişir.
+Söz satır sayıları dillerde eşit tutulur, böylece aynı sahneler tüm dillerde senkron kalır.
 
 ## 3. Üretim hattı (pipeline)
 
@@ -94,7 +116,8 @@ Tahminler kaba; ilk hafta gerçek sürelerle güncellenecek.
 
 | Metrik | Hedef (Ay 1) | Karar |
 |---|---|---|
-| Shorts ortalama izlenme | 10K | 3 gün üst üste <1K → formatı değiştir |
+| Shorts ortalama izlenme | 10K | 3 gün üst üste <1K → o kancayı bırak |
+| Shorts → uzun video geçişi | Uzun videonun "trafik kaynakları"nda Shorts payı | düşükse başlık/thumbnail köprüsünü güçlendir |
 | Shorts izlenme oranı (viewed vs swiped) | >70% | <60% → ilk 1 sn kancayı güçlendir |
 | Uzun video ort. izlenme süresi | >40% | <25% → tempo/şarkı sırası değişir |
 | Abone | 1.000 (YPP eşiği) | — |
