@@ -337,7 +337,9 @@ ENC = ["-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", "-ar", 44100, "-
 
 def subs_filter(srt, vertical=False):
     style = "Fontsize=14,Bold=1,Outline=2,MarginV=40" if vertical else "Fontsize=22,Bold=1,Outline=2,MarginV=30"
-    return f"subtitles={srt}:force_style='{style}'"
+    # Windows'ta "C:/..." içindeki iki nokta ffmpeg filtre ayırıcısıyla çakışır
+    path = Path(srt).resolve().as_posix().replace(":", r"\:").replace("'", r"\'")
+    return f"subtitles={path}:force_style='{style}'"
 
 
 def jingle(d, fmt):
