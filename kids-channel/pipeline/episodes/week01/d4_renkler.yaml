@@ -1,0 +1,71 @@
+id: w01d4_renk_makinesi
+day: 4  # Perşembe
+format: short
+hook: >-
+  Jugnu Kids — renkli şeker/top makinesi; kol çevrilir, renkli top düşer, renk adı söylenir.
+  Tatmin edici (satisfying) ses efektleri, 25 sn.
+title:
+  tr: "Sihirli Top Makinesi 🌈 Renkleri Öğren! Red, Blue, Yellow | Lulu & Bobo #shorts"
+  en: "Magic Ball Machine 🌈 Learn Colors! Red, Blue, Yellow | Lulu & Bobo #shorts"
+description:
+  tr: "Zıpzıp kolu çeviriyor, hangi renk düşecek? Kırmızı, mavi, sarı, yeşil! Renkleri Türkçe ve İngilizce öğren. 🔴🔵🟡🟢"
+  en: "Zippy turns the handle, which color will drop? Red, blue, yellow, green! Learn colors in English and Turkish. 🔴🔵🟡🟢"
+tags:
+  tr: [renkleri öğren, renkler, top makinesi, bebek videoları, lulu ve bobo]
+  en: [learn colors, colors for kids, ball machine, toddler video, lulu and bobo]
+thumbnail: >-
+  a big shiny glass gumball machine full of rainbow balls, zipzip_frog hugging it with huge eyes,
+  plain bright yellow background
+music:
+  style: "kids learning song, toy piano, pop synth, mechanical clicks, cheerful female vocal, 118 bpm"
+  duration: 25
+  lyrics:
+    tr: |
+      [verse]
+      Çevir çevir, ne çıkacak?
+      Kırmızı, red!
+      Mavi, blue!
+      Sarı, yellow!
+      Yeşil, green!
+      Renkler ne güzel, gökkuşağı gibi!
+    en: |
+      [verse]
+      Turn it, turn it, what will come out?
+      Red, kırmızı!
+      Blue, mavi!
+      Yellow, sarı!
+      Green, yeşil!
+      Colors are lovely, like a rainbow!
+scenes:
+  - dur: 4
+    chars: [zipzip]
+    sing: true
+    image: next to a tall shiny glass ball machine filled with colorful balls, playroom
+    motion: zipzip grabs the big handle and turns it, the machine wobbles and clicks
+    sub: {tr: "Çevir çevir! 🔄", en: "Turn it, turn it! 🔄"}
+  - dur: 4
+    chars: [zipzip]
+    image: a shiny red ball rolling out of the machine chute
+    motion: red ball rolls out and bounces into zipzip's hands, sparkle
+    sub: {tr: "Kırmızı – Red! 🔴", en: "Red – Kırmızı! 🔴"}
+  - dur: 4
+    chars: [zipzip]
+    image: a shiny blue ball rolling out of the machine chute
+    motion: blue ball bounces on zipzip's head, he laughs
+    sub: {tr: "Mavi – Blue! 🔵", en: "Blue – Mavi! 🔵"}
+  - dur: 4
+    chars: [zipzip, lulu]
+    image: a shiny yellow ball rolling to lulu
+    motion: yellow ball rolls to lulu, she catches it and cheers
+    sub: {tr: "Sarı – Yellow! 🟡", en: "Yellow – Sarı! 🟡"}
+  - dur: 4
+    chars: [zipzip, lulu]
+    image: a shiny green ball rolling out
+    motion: green ball pops out, both friends high five
+    sub: {tr: "Yeşil – Green! 🟢", en: "Green – Yeşil! 🟢"}
+  - dur: 5
+    chars: [zipzip, lulu]
+    sing: true
+    image: rainbow of balls spilling across the floor, friends sitting among them
+    motion: many balls pour out gently, friends throw them in the air, rainbow appears
+    sub: {tr: "Gökkuşağı gibi! 🌈", en: "Like a rainbow! 🌈"}

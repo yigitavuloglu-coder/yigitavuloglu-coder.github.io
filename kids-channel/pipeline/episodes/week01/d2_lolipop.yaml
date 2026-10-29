@@ -1,0 +1,43 @@
+id: w01d2_lolipop
+day: 2  # Salı
+format: short
+hook: >-
+  Father-daughter show — ebeveyn + çocuk + şeker, 10–15 sn, soruyla açılış ("Lolipop seviyor musun?"),
+  sürpriz son. Emoji yoğun başlık.
+title:
+  tr: "Lolipop seviyor musun? 🍭😋 Bobo Baba'nın sürprizi! #shorts #çizgifilm"
+  en: "Do you like lollipops? 🍭😋 Daddy Bobo's surprise! #shorts #cartoon"
+description:
+  tr: "Lulu lolipop istiyor ama Bobo Baba'nın aklında bambaşka bir sürpriz var! 🍓 Tatlıdan sonra dişlerimizi fırçalamayı unutmayalım. 🪥"
+  en: "Lulu wants a lollipop, but Daddy Bobo has an even sweeter surprise! 🍓 Remember to brush your teeth after sweets. 🪥"
+tags:
+  tr: [lolipop, baba kız, komik çizgi film, çocuk videoları, lulu ve bobo]
+  en: [lollipop, daddy daughter, funny cartoon, kids video, lulu and bobo]
+thumbnail: >-
+  lulu_hedgehog with huge pleading eyes looking up at a giant rainbow lollipop held by bobo_bear,
+  plain pastel pink background
+music:
+  style: "funny cartoon underscore, pizzicato strings, xylophone, whistles, light, 110 bpm, instrumental"
+  duration: 14
+  lyrics: {tr: "[instrumental]", en: "[instrumental]"}
+scenes:
+  - dur: 3
+    chars: [lulu]
+    image: looking at camera with big pleading eyes, cozy living room
+    motion: lulu tilts her head and blinks slowly, cute begging pose
+    sub: {tr: "Lolipop seviyor musun? 🍭", en: "Do you like lollipops? 🍭"}
+  - dur: 3
+    chars: [bobo]
+    image: holding a giant rainbow swirl lollipop behind his back, playful wink, living room
+    motion: bobo reveals the lollipop from behind his back with a wink
+    sub: {tr: "Bobo Baba: Tadaa! 🍭", en: "Daddy Bobo: Ta-daa! 🍭"}
+  - dur: 3
+    chars: [lulu, bobo]
+    image: lulu jumping toward the lollipop, bobo smiling, living room
+    motion: lulu jumps excitedly, bobo spins the lollipop and it turns into a big red strawberry
+    sub: {tr: "Ama o da ne? 🍓", en: "Wait, what? 🍓"}
+  - dur: 4
+    chars: [lulu, bobo]
+    image: lulu happily eating a big strawberry, bobo laughing, then both holding toothbrushes
+    motion: lulu bites strawberry, surprised then delighted, both giggle and wave toothbrushes
+    sub: {tr: "Çilek de çok tatlı! 😋🪥", en: "Strawberries are sweet too! 😋🪥"}

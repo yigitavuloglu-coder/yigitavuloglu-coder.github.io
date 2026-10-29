@@ -1,0 +1,72 @@
+id: w01d3_sabah_rutini
+day: 3  # Çarşamba
+format: short
+hook: >-
+  SM Bangla Daily — bebeğin komik sabah rutini; her adımda küçük bir kaza, 30–40 sn, "😂" başlık,
+  hızlı ama net sahne geçişleri.
+title:
+  tr: "Lulu'nun Sabah Rutini 😂 Diş fırçası nerede? | Lulu & Bobo #shorts"
+  en: "Lulu's Morning Routine 😂 Where's my toothbrush? | Lulu & Bobo #shorts"
+description:
+  tr: "Uyan, yüzünü yıka, dişini fırçala, giyin! Lulu'nun sabahı biraz karışık ama çok eğlenceli. ☀️🪥👕"
+  en: "Wake up, wash your face, brush your teeth, get dressed! Lulu's morning is messy but so much fun. ☀️🪥👕"
+tags:
+  tr: [sabah rutini, diş fırçalama, komik çizgi film, iyi alışkanlıklar, lulu ve bobo]
+  en: [morning routine, brush teeth, funny cartoon, good habits, lulu and bobo]
+thumbnail: >-
+  lulu_hedgehog with toothpaste foam beard and surprised face holding toothbrush upside down,
+  plain light blue background
+music:
+  style: "kids song, bouncy piano, glockenspiel, cheerful female vocal, 125 bpm, morning sunshine"
+  duration: 34
+  lyrics:
+    tr: |
+      [verse]
+      Günaydın güneş, uyan uyan!
+      Yüzümü yıka, şıpır şıpır!
+      Dişlerimi fırçala, fırça fırça!
+      Giyiniyorum, hazırım işte!
+      [chorus]
+      Lu-lu-Bo-bo, günaydın!
+    en: |
+      [verse]
+      Good morning sun, wake up, wake up!
+      Wash my face, splish splash!
+      Brush my teeth, brush brush!
+      Get dressed, and I'm ready!
+      [chorus]
+      Lu-lu-Bo-bo, good morning!
+scenes:
+  - dur: 5
+    chars: [lulu]
+    sing: true
+    image: sleepy in a cozy bed, sunlight through window, alarm clock with smiling face
+    motion: lulu stretches, yawns big, her spikes fluff up like bed hair
+    sub: {tr: "Günaydın güneş! ☀️", en: "Good morning sun! ☀️"}
+  - dur: 5
+    chars: [lulu]
+    image: at a small bathroom sink with a step stool, water splashing
+    motion: lulu splashes water, gets her whole face wet, shakes her head like a puppy
+    sub: {tr: "Şıpır şıpır! 💦", en: "Splish splash! 💦"}
+  - dur: 6
+    chars: [lulu]
+    image: holding toothbrush upside down with too much toothpaste, mirror
+    motion: lulu brushes with the wrong end, then flips it and brushes properly, foam beard
+    sub: {tr: "Fırça fırça! 🪥", en: "Brush brush! 🪥"}
+  - dur: 6
+    chars: [lulu]
+    image: in bedroom wearing yellow overalls on her head like a hat
+    motion: lulu puts overalls on her head, giggles, then dresses correctly
+    sub: {tr: "Ups! Böyle değil! 😂", en: "Oops! Not like that! 😂"}
+  - dur: 6
+    chars: [lulu, bobo]
+    sing: true
+    image: kitchen, bobo serving breakfast, lulu fully dressed and proud
+    motion: lulu runs in, poses proudly, bobo gives a thumbs up and a hug
+    sub: {tr: "Hazırım! 🎉", en: "I'm ready! 🎉"}
+  - dur: 6
+    chars: [lulu, bobo, zipzip]
+    sing: true
+    image: three friends waving at camera in sunny kitchen
+    motion: all three wave and sing, zipzip hops into frame
+    sub: {tr: "Lu-lu-Bo-bo, günaydın! 👋", en: "Lu-lu-Bo-bo, good morning! 👋"}

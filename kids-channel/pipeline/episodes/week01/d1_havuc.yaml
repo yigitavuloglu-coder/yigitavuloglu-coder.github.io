@@ -1,0 +1,71 @@
+id: w01d1_sebzeler
+day: 1  # Pazartesi
+format: short
+hook: >-
+  Telugu Learning with Anika — iki dilli kelime kartı: obje ekrana "pop" ile girer,
+  önce anadilde sonra İngilizce söylenir, ~3 sn/kelime, 20 sn toplam. İlk karede obje + ses.
+title:
+  tr: "Havuç – Carrot 🥕 Sebzeleri Öğreniyoruz | Türkçe İngilizce | Lulu & Bobo #shorts"
+  en: "Carrot – Havuç 🥕 Learn Vegetables | Turkish English for Kids | Lulu & Bobo #shorts"
+description:
+  tr: "Lulu ile sebzelerin adlarını Türkçe ve İngilizce öğren! Havuç, domates, salatalık, mısır, brokoli. Birlikte söyle! 🥕🍅🥒🌽🥦"
+  en: "Learn vegetable names in English and Turkish with Lulu! Carrot, tomato, cucumber, corn, broccoli. Sing along! 🥕🍅🥒🌽🥦"
+tags:
+  tr: [sebzeler, ingilizce öğren, çocuk şarkıları, bebek videoları, kelime öğrenme, lulu ve bobo]
+  en: [vegetables for kids, learn turkish, kids songs, toddler learning, vocabulary, lulu and bobo]
+thumbnail: >-
+  lulu_hedgehog holding a giant shiny carrot next to her face, surprised happy open mouth,
+  plain bright orange background, close up
+music:
+  style: "children's song, playful marimba, ukulele, claps, cheerful female vocal, 120 bpm, simple catchy"
+  duration: 20
+  lyrics:
+    tr: |
+      [verse]
+      Havuç, carrot! 🥕
+      Domates, tomato!
+      Salatalık, cucumber!
+      Mısır, corn!
+      Brokoli, broccoli!
+      Yaşasın sebzeler, yum yum yum!
+    en: |
+      [verse]
+      Carrot, havuç!
+      Tomato, domates!
+      Cucumber, salatalık!
+      Corn, mısır!
+      Broccoli, brokoli!
+      Hooray for veggies, yum yum yum!
+scenes:
+  - dur: 3
+    chars: [lulu]
+    sing: true
+    image: holding a big orange carrot, sunny kitchen garden, sparkles
+    motion: carrot pops in with a bounce, lulu gasps then sings happily, gentle camera push in
+    sub: {tr: "Havuç – Carrot! 🥕", en: "Carrot – Havuç! 🥕"}
+  - dur: 3
+    chars: [lulu]
+    image: holding a round red tomato, garden background
+    motion: tomato pops in with a bounce, lulu smiles and nods to the beat
+    sub: {tr: "Domates – Tomato! 🍅", en: "Tomato – Domates! 🍅"}
+  - dur: 3
+    chars: [lulu]
+    image: hugging a long green cucumber, garden background
+    motion: cucumber pops in, lulu wiggles side to side
+    sub: {tr: "Salatalık – Cucumber! 🥒", en: "Cucumber – Salatalık! 🥒"}
+  - dur: 3
+    chars: [lulu]
+    image: holding a golden corn cob, garden background
+    motion: corn pops in with sparkles, lulu jumps once
+    sub: {tr: "Mısır – Corn! 🌽", en: "Corn – Mısır! 🌽"}
+  - dur: 3
+    chars: [lulu]
+    image: holding a green broccoli like a tiny tree, garden background
+    motion: broccoli pops in, lulu pretends it is a tree and giggles
+    sub: {tr: "Brokoli – Broccoli! 🥦", en: "Broccoli – Brokoli! 🥦"}
+  - dur: 5
+    chars: [lulu, bobo]
+    sing: true
+    image: lulu and bobo at a table with a colorful vegetable salad bowl
+    motion: both take a bite and say yum, happy dance in their chairs
+    sub: {tr: "Yaşasın sebzeler! Yum yum! 😋", en: "Hooray for veggies! Yum yum! 😋"}

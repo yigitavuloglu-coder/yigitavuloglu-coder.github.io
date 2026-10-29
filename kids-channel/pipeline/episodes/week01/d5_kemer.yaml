@@ -1,0 +1,75 @@
+id: w01d5_emniyet_kemeri
+day: 5  # Cuma
+format: short
+hook: >-
+  Bubu Arabic / Lunito — güvenlik alışkanlığı şarkısı (emniyet kemeri), "klik!" sesi kanca,
+  30 sn; uzun 16:9 versiyonu Pazar derlemesine girer.
+title:
+  tr: "Kemerini Tak, Klik Klik! 🚗 Emniyet Kemeri Şarkısı | Lulu & Bobo #shorts"
+  en: "Buckle Up, Click Click! 🚗 Seat Belt Song for Kids | Lulu & Bobo #shorts"
+description:
+  tr: "Arabaya binince ilk ne yaparız? Kemerimizi takarız! Klik klik! Güvenli yolculuk şarkısı. 🚗💺"
+  en: "What do we do first in the car? Buckle up! Click click! A safe travel song for kids. 🚗💺"
+tags:
+  tr: [emniyet kemeri, güvenlik şarkısı, araba şarkısı, iyi alışkanlıklar, lulu ve bobo]
+  en: [seat belt song, safety song, car song, good habits, lulu and bobo]
+thumbnail: >-
+  lulu_hedgehog in a child car seat proudly showing buckled seat belt, thumbs up,
+  plain bright green background
+music:
+  style: "kids road trip song, acoustic guitar, hand claps, car horn beep, cheerful female vocal, 115 bpm"
+  duration: 30
+  lyrics:
+    tr: |
+      [verse]
+      Arabaya bindik, ne yapalım?
+      Kemerimizi takalım, klik klik!
+      Bobo Baba da takıyor, klik klik!
+      Herkes güvende, haydi gidelim!
+      [chorus]
+      Klik klik, kemer tak!
+      Güvenli yolculuk, bip bip bip!
+    en: |
+      [verse]
+      We're in the car, what do we do?
+      Buckle up our seat belts, click click!
+      Daddy Bobo buckles too, click click!
+      Everyone is safe, let's go!
+      [chorus]
+      Click click, buckle up!
+      Safe trip, beep beep beep!
+scenes:
+  - dur: 5
+    chars: [lulu, bobo]
+    sing: true
+    image: bobo helping lulu climb into a child car seat in a cute round yellow car, sunny street
+    motion: lulu climbs into seat, looks at camera curiously
+    sub: {tr: "Arabaya bindik! 🚗", en: "We're in the car! 🚗"}
+  - dur: 5
+    chars: [lulu]
+    image: close up of lulu's small hands pulling the seat belt buckle
+    motion: lulu pulls the belt and clicks it, a sparkle on the buckle
+    sub: {tr: "Klik klik! 💺", en: "Click click! 💺"}
+  - dur: 5
+    chars: [bobo]
+    image: bobo in driver seat buckling his seat belt, smiling
+    motion: bobo clicks his belt and gives a wink
+    sub: {tr: "Bobo Baba da takıyor! ✅", en: "Daddy Bobo buckles too! ✅"}
+  - dur: 5
+    chars: [lulu, bobo, zipzip]
+    sing: true
+    image: zipzip in the back seat buckled up, all three smiling
+    motion: all three show their buckled belts and cheer
+    sub: {tr: "Herkes güvende! 🙌", en: "Everyone is safe! 🙌"}
+  - dur: 5
+    chars: [lulu, bobo, zipzip]
+    sing: true
+    image: the yellow car driving slowly on a sunny countryside road with trees
+    motion: car drives gently forward, friends wave from windows, beep beep
+    sub: {tr: "Bip bip bip! 🎶", en: "Beep beep beep! 🎶"}
+  - dur: 5
+    chars: [lulu]
+    sing: true
+    image: lulu in car seat giving thumbs up to camera
+    motion: lulu sings and taps the buckle to the beat
+    sub: {tr: "Klik klik, kemer tak! 👍", en: "Click click, buckle up! 👍"}
